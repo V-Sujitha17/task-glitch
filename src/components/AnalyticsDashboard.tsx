@@ -1,13 +1,13 @@
 import { Box, Card, CardContent, Stack, Typography } from '@mui/material';
 import { BarChart, LineChart, PieChart } from '@mui/x-charts';
 import { DerivedTask, Task } from '@/types';
-import {
+/*import {
   computeFunnel,
   computeThroughputByWeek,
   computeWeightedPipeline,
   computeForecast,
   computeVelocityByPriority,
-} from '@/utils/logic';
+} from '@/utils/logic';*/
 
 interface Props {
   tasks: DerivedTask[];
