@@ -15,11 +15,11 @@ interface Props {
 
 export default function AnalyticsDashboard({ tasks }: Props) {
   const baseTasks = tasks as unknown as Task[];
-  const funnel = computeFunnel(baseTasks);
+  //const funnel = computeFunnel(baseTasks);
   const weekly = computeThroughputByWeek(baseTasks);
   const weightedPipeline = computeWeightedPipeline(baseTasks);
   const forecast = computeForecast(weekly.map(w => ({ week: w.week, revenue: w.revenue })), 4);
-  const velocity = computeVelocityByPriority(baseTasks);
+ // const velocity = computeVelocityByPriority(baseTasks);
 
   return (
     <Card>
